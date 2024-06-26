@@ -1,0 +1,60 @@
+/* Write your CSS here */
+.history-list-item {
+  display: flex;
+  align-items: flex-end;
+
+  color: #334155;
+  width: 100%;
+  padding: 15px 15px;
+  border: solid 1px #d7dfe9;
+  border-top: none;
+
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+}
+.items-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.item-title {
+  min-width: 150px;
+}
+.item-amount {
+  min-width: 150px;
+}
+.item-type {
+  padding-right: 2%;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+.delete-img {
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .history-list-item {
+    font-size: 14px;
+  }
+  .item-title {
+    min-width: 90px;
+    max-width: 90px;
+    margin-right: 10px;
+  }
+  .item-amount {
+    min-width: 90px;
+    max-width: 90px;
+    margin-right: 10px;
+  }
+  .item-type {
+  }
+  .delete-img {
+    width: 20px;
+  }
+}
