@@ -85,7 +85,6 @@ class MoneyManager extends Component {
       amount: parseInt(amount),
       transactionType: transactionType === 'EXPENSES' ? 'Expenses' : 'Income',
     }
-    
 
     this.setState(prevState => ({
       transactionDetailsList: [
@@ -152,7 +151,7 @@ class MoneyManager extends Component {
           </p>
         </div>
 
-        <ol className="money-details-list">
+        <div className="money-details-list">
           {moneyDetails.map(eachItem => (
             <MoneyDetails
               totalIncome={totalIncome}
@@ -161,7 +160,7 @@ class MoneyManager extends Component {
               key={eachItem.id}
             />
           ))}
-        </ol>
+        </div>
 
         <div className="form-and-history-container">
           <form className="transaction-form" onSubmit={this.addTransaction}>

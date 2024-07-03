@@ -18,7 +18,7 @@ const MoneyDetails = props => {
   }
 
   return (
-    <li className={`money-details-list-item ${altName}`}>
+    <div className={`money-details-list-item ${altName}`}>
       <img className="img" src={imgUrl} alt={altName} />
       <div className="card">
         <p className="card-name">{heading}</p>
@@ -29,7 +29,7 @@ const MoneyDetails = props => {
 
         {/* comment: data-testid="......" is for testing purpose only, it has nothing to do with app function  */}
       </div>
-    </li>
+    </div>
   )
 }
 
